@@ -36,9 +36,11 @@ It is not another listicle of hollow "headline writing tips". It is a **data-bac
 
 Feed it an article draft, a one-line topic, or an old title to optimize, and it outputs:
 
-- **6-8 ready-to-use Chinese title candidates**, each tagged with character count, the paradigm used, and the target goal
+- **6-8 ready-to-use WeChat article titles** across short (15-20 characters), standard (22-27), and full (28-30) lengths
+- **WeChat cover copy and Xiaohongshu titles**, both capped at 20 characters
+- **Exact character count, paradigm, and growth goal** attached to every candidate
 - **A top recommendation with reasoning** — why that title fits this article best
-- **Grouping by growth goal**: titles for raw reads vs. titles for shares/follower growth, given separately, so you can pick by your ops target
+- **Clear growth-goal labels**: every candidate states whether it targets raw reads or shares/follower growth, without duplicating titles across groups
 - **Old-title diagnosis**: for a rewrite request, it first points out the concrete problems (too long / no brand named / no number / redundant second half) in one or two sentences, then gives candidates — so you learn the logic, not just the result
 
 ## 🧠 Core insight: reads and follower growth are different goals
@@ -98,7 +100,7 @@ Every paradigm is induced from the corpus and annotated with real examples:
 
 ### Hard rules (statistical facts, not style preferences)
 
-- **Length**: target 22-27 Chinese characters, 30 as the hard cap. The TOP10 average is only 25 — the higher the rank, the shorter the title
+- **Length**: WeChat article titles cover short (15-20), standard (22-27), and full (28-30) variants; cover copy and Xiaohongshu titles are capped at 20 characters
 - **The first 15 characters must stand alone**: WeChat's list view truncates titles, so the strongest information goes first
 - **Name names**: 92% of the top titles mention a specific model/product, with version numbers (Qwen3.7-Max, never "a certain LLM")
 - **Numbers**: 56% contain Arabic numerals; non-round numbers like 8 and 16 feel more credible than round ones — they imply you actually counted
@@ -136,10 +138,11 @@ No rules to memorize. Just ask in natural language:
 "Help me title this WeChat article: [paste the draft]"
 "Optimize this title for me: [old title]"
 "I'm writing a listicle about hidden Doubao tricks, mainly for follower growth — give me a few titles"
+"Also give me WeChat cover copy and Xiaohongshu titles under 20 characters"
 "Use the lengyi-title skill to title this article"
 ```
 
-The agent loads the Skill automatically and outputs 6-8 candidates following the workflow: set goal → pick paradigms → apply hard rules → self-check.
+The agent loads the Skill automatically and outputs a complete title pack following the workflow: set goal → pick paradigms → create length variants → adapt by platform → self-check.
 
 ---
 
