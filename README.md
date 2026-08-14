@@ -36,8 +36,9 @@ It is not another listicle of hollow "headline writing tips". It is a **data-bac
 
 Feed it an article draft, a one-line topic, or an old title to optimize, and it outputs:
 
-- **6-8 ready-to-use WeChat article titles** across short (15-20 characters), standard (22-27), and full (28-30) lengths
-- **WeChat cover copy and Xiaohongshu titles**, both capped at 20 characters
+- **A three-platform title pack** with 5 WeChat article titles, 5 shared Xiaohongshu/WeChat-cover titles, and 5 Douyin titles
+- **Platform-specific lengths**: 22-30 characters for WeChat articles, 20 max for Xiaohongshu/WeChat covers, and a recommended 8-18 with a 20-character delivery cap for Douyin
+- **One reusable short-title set** for both WeChat cover artwork and Xiaohongshu, with no duplicated variants
 - **Exact character count, paradigm, and growth goal** attached to every candidate
 - **A top recommendation with reasoning** — why that title fits this article best
 - **Clear growth-goal labels**: every candidate states whether it targets raw reads or shares/follower growth, without duplicating titles across groups
@@ -100,7 +101,7 @@ Every paradigm is induced from the corpus and annotated with real examples:
 
 ### Hard rules (statistical facts, not style preferences)
 
-- **Length**: WeChat article titles cover short (15-20), standard (22-27), and full (28-30) variants; cover copy and Xiaohongshu titles are capped at 20 characters
+- **Length**: WeChat gets three 22-27-character and two 28-30-character titles; Xiaohongshu/WeChat cover titles are capped at 20; Douyin targets 8-18 and is capped at 20
 - **The first 15 characters must stand alone**: WeChat's list view truncates titles, so the strongest information goes first
 - **Name names**: 92% of the top titles mention a specific model/product, with version numbers (Qwen3.7-Max, never "a certain LLM")
 - **Numbers**: 56% contain Arabic numerals; non-round numbers like 8 and 16 feel more credible than round ones — they imply you actually counted
@@ -138,11 +139,12 @@ No rules to memorize. Just ask in natural language:
 "Help me title this WeChat article: [paste the draft]"
 "Optimize this title for me: [old title]"
 "I'm writing a listicle about hidden Doubao tricks, mainly for follower growth — give me a few titles"
-"Also give me WeChat cover copy and Xiaohongshu titles under 20 characters"
+"Give me one set of reusable WeChat-cover/Xiaohongshu titles under 20 characters"
+"Give me 5 title options each for WeChat, Xiaohongshu, and Douyin"
 "Use the lengyi-title skill to title this article"
 ```
 
-The agent loads the Skill automatically and outputs a complete title pack following the workflow: set goal → pick paradigms → create length variants → adapt by platform → self-check.
+The agent loads the Skill automatically and outputs a three-platform title pack following the workflow: set goal → pick paradigms → adapt by platform → validate lengths → self-check.
 
 ---
 
