@@ -1,0 +1,4 @@
+interface:
+  display_name: "爆款标题"
+  short_description: "为公众号、小红书、抖音生成高点击标题，并自动适配平台字数"
+  default_prompt: "使用 $viral-title 为这篇内容分别生成公众号、小红书/贴图和抖音标题。"

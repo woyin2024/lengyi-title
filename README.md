@@ -1,6 +1,6 @@
 <div align="center">
 
-# Title.skill
+# Viral Title.skill
 A Skill purpose-built for titling new-media articles.<br>
 **Writing patterns hand-picked from 100+ viral articles — not clickbait tricks.**
 
@@ -13,7 +13,7 @@ A Skill purpose-built for titling new-media articles.<br>
 </div>
 
 <p align="center">
-  <img src="public/产品图.png" width="100%" alt="title.skill product overview" />
+  <img src="public/产品图.png" width="100%" alt="viral-title product overview" />
 </p>
 
 ---
@@ -36,9 +36,12 @@ It is not another listicle of hollow "headline writing tips". It is a **data-bac
 
 Feed it an article draft, a one-line topic, or an old title to optimize, and it outputs:
 
-- **6-8 ready-to-use Chinese title candidates**, each tagged with character count, the paradigm used, and the target goal
+- **A three-platform title pack** with 5 WeChat article titles, 5 shared Xiaohongshu/WeChat-cover titles, and 5 Douyin titles
+- **Platform-specific lengths**: 22-30 characters for WeChat articles, 20 max for Xiaohongshu/WeChat covers, and a recommended 8-18 with a 20-character delivery cap for Douyin
+- **One reusable short-title set** for both WeChat cover artwork and Xiaohongshu, with no duplicated variants
+- **Exact character count, paradigm, and growth goal** attached to every candidate
 - **A top recommendation with reasoning** — why that title fits this article best
-- **Grouping by growth goal**: titles for raw reads vs. titles for shares/follower growth, given separately, so you can pick by your ops target
+- **Clear growth-goal labels**: every candidate states whether it targets raw reads or shares/follower growth, without duplicating titles across groups
 - **Old-title diagnosis**: for a rewrite request, it first points out the concrete problems (too long / no brand named / no number / redundant second half) in one or two sentences, then gives candidates — so you learn the logic, not just the result
 
 ## 🧠 Core insight: reads and follower growth are different goals
@@ -98,7 +101,7 @@ Every paradigm is induced from the corpus and annotated with real examples:
 
 ### Hard rules (statistical facts, not style preferences)
 
-- **Length**: target 22-27 Chinese characters, 30 as the hard cap. The TOP10 average is only 25 — the higher the rank, the shorter the title
+- **Length**: WeChat gets three 22-27-character and two 28-30-character titles; Xiaohongshu/WeChat cover titles are capped at 20; Douyin targets 8-18 and is capped at 20
 - **The first 15 characters must stand alone**: WeChat's list view truncates titles, so the strongest information goes first
 - **Name names**: 92% of the top titles mention a specific model/product, with version numbers (Qwen3.7-Max, never "a certain LLM")
 - **Numbers**: 56% contain Arabic numerals; non-round numbers like 8 and 16 feel more credible than round ones — they imply you actually counted
@@ -122,7 +125,7 @@ Every paradigm is induced from the corpus and annotated with real examples:
 git clone https://github.com/woyin2024/lengyi-title.git
 ```
 
-Put the whole `lengyi-title` folder into your agent's Skills directory:
+Install the Skill under a folder named `viral-title` in your agent's Skills directory:
 - **Claude Code**: `C:\Users\Administrator\.claude\skills`
 - **Codex**: `C:\Users\Administrator\.codex\skills`
 - **WorkBuddy**: `~/.workbuddy/skills`
@@ -136,10 +139,12 @@ No rules to memorize. Just ask in natural language:
 "Help me title this WeChat article: [paste the draft]"
 "Optimize this title for me: [old title]"
 "I'm writing a listicle about hidden Doubao tricks, mainly for follower growth — give me a few titles"
-"Use the lengyi-title skill to title this article"
+"Give me one set of reusable WeChat-cover/Xiaohongshu titles under 20 characters"
+"Give me 5 title options each for WeChat, Xiaohongshu, and Douyin"
+"Use the viral-title skill to title this article"
 ```
 
-The agent loads the Skill automatically and outputs 6-8 candidates following the workflow: set goal → pick paradigms → apply hard rules → self-check.
+The agent loads the Skill automatically and outputs a three-platform title pack following the workflow: set goal → pick paradigms → adapt by platform → validate lengths → self-check.
 
 ---
 
