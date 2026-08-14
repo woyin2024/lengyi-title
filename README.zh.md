@@ -1,6 +1,6 @@
 <div align="center">
 
-# 标题.skill
+# 爆款标题.skill
 一款专门给新媒体文章取标题的Skill。<br>
 **从100+爆款文章精挑细选的写作思路，不是标题党套路。**
 
@@ -13,7 +13,7 @@
 </div>
 
 <p align="center">
-  <img src="public/产品图.png" width="100%" alt="lengyi-title 产品介绍图" />
+  <img src="public/产品图.png" width="100%" alt="viral-title 产品介绍图" />
 </p>
 
 ---
@@ -124,7 +124,7 @@
 # 克隆仓库
 git clone https://github.com/woyin2024/lengyi-title.git
 ```
-将整个 `lengyi-title` 文件夹放入你 Agent 的 Skills 目录：
+安装时将 Skill 文件夹命名为 `viral-title`，再放入你 Agent 的 Skills 目录：
 -  **Claude Code 路径**：`C:\Users\Administrator\.claude\skills`
 - **Codex 路径**：`C:\Users\Administrator\.codex\skills`
 - **WorkBuddy 路径**：`~/.workbuddy/skills`
@@ -140,7 +140,7 @@ git clone https://github.com/woyin2024/lengyi-title.git
 “我想写一篇豆包隐藏玩法的清单文，主要是涨粉，帮我想几个题目”
 “给我 20 字内的公众号贴图/小红书通用短标题”
 “同一个选题分别给我公众号、小红书和抖音各 5 个标题”
-“用lengyi-title skill给这篇文章起标题”
+“用viral-title skill给这篇文章起标题”
 ```
 
 Agent 会自动加载 Skill，按「定目标 → 选范式 → 平台改写 → 字数校验 → 自检」的流程输出三平台标题包。

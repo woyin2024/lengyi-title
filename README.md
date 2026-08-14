@@ -1,6 +1,6 @@
 <div align="center">
 
-# Title.skill
+# Viral Title.skill
 A Skill purpose-built for titling new-media articles.<br>
 **Writing patterns hand-picked from 100+ viral articles — not clickbait tricks.**
 
@@ -13,7 +13,7 @@ A Skill purpose-built for titling new-media articles.<br>
 </div>
 
 <p align="center">
-  <img src="public/产品图.png" width="100%" alt="title.skill product overview" />
+  <img src="public/产品图.png" width="100%" alt="viral-title product overview" />
 </p>
 
 ---
@@ -125,7 +125,7 @@ Every paradigm is induced from the corpus and annotated with real examples:
 git clone https://github.com/woyin2024/lengyi-title.git
 ```
 
-Put the whole `lengyi-title` folder into your agent's Skills directory:
+Install the Skill under a folder named `viral-title` in your agent's Skills directory:
 - **Claude Code**: `C:\Users\Administrator\.claude\skills`
 - **Codex**: `C:\Users\Administrator\.codex\skills`
 - **WorkBuddy**: `~/.workbuddy/skills`
@@ -141,7 +141,7 @@ No rules to memorize. Just ask in natural language:
 "I'm writing a listicle about hidden Doubao tricks, mainly for follower growth — give me a few titles"
 "Give me one set of reusable WeChat-cover/Xiaohongshu titles under 20 characters"
 "Give me 5 title options each for WeChat, Xiaohongshu, and Douyin"
-"Use the lengyi-title skill to title this article"
+"Use the viral-title skill to title this article"
 ```
 
 The agent loads the Skill automatically and outputs a three-platform title pack following the workflow: set goal → pick paradigms → adapt by platform → validate lengths → self-check.
